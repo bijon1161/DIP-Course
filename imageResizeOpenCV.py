@@ -15,6 +15,7 @@ imgResize=cv2.resize(img,(width,height))
 print(img.shape)
 print(imgResize.shape)
 imgCropped= img[1000:1536,400:2304]
-cv2.imshow("CityCropped",imgCropped)
+croppedImgResize = cv2.resize(imgCropped,(img.shape[1],img.shape[0]))
+cv2.imshow("croppedImageResize",croppedImgResize)
 
 cv2.waitKey()
