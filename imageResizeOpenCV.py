@@ -14,6 +14,7 @@ width,height =400,400
 imgResize=cv2.resize(img,(width,height))
 print(img.shape)
 print(imgResize.shape)
-cv2.imshow("City",img)
-cv2.imshow("City",imgResize)
+imgCropped= img[1000:1536,400:2304]
+cv2.imshow("CityCropped",imgCropped)
+
 cv2.waitKey()
